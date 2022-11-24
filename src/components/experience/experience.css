@@ -1,0 +1,68 @@
+.container.experience_container {
+  width: 40%;
+  padding-bottom: 4rem;
+}
+
+.experience_icons {
+  width: 2rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.experience {
+  background: var(--color-bg-variant);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  user-select: none;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.icon_description {
+  color: var(--color-light);
+  display: block;
+  font-weight: 300;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: var(--color-primary);
+}
+
+/* ====== Media Queries ====== */
+
+/* ---- Medium Devices ---- */
+
+@media screen and (max-width: 1024px) {
+  .container.experience_container {
+    width: 60%;
+  }
+}
+
+/* ---- Small Devices ---- */
+
+@media screen and (max-width: 600px) {
+  .container.experience_container {
+    width: var(--container-width-sm);
+  }
+
+  .icon_description {
+    width: var(--container-width-sm);
+  }
+}
